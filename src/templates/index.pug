@@ -1,0 +1,73 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home-news
+		.container
+			.row
+				.col
+					h1 Tin tức
+			.row
+				.col-md-4.item
+					a(href="#")
+						figure
+							.box-img
+								img(src="./img/home-news-1.png", alt="")
+							figcaption
+								h2 Trung tâm đào tạo IT chuyên nghiệp
+								time 26/08/2018
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aut, magnam architecto numquam nulla ex esse dolorem accusamus eius.
+				.col-md-4.item
+					a(href="#")
+						figure
+							.box-img
+								img(src="./img/home-news-2.png", alt="")
+							figcaption
+								h2 Trung tâm đào tạo IT chuyên nghiệp
+								time 26/08/2018
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aut, magnam architecto numquam nulla ex esse dolorem accusamus eius.
+				.col-md-4.item
+					a(href="#")
+						figure
+							.box-img
+								img(src="./img/home-news-3.png", alt="")
+							figcaption
+								h2 Trung tâm đào tạo IT chuyên nghiệp
+								time 26/08/2018
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aut, magnam architecto numquam nulla ex esse dolorem accusamus eius.
+			.row
+				.owl-carousel.owl-pos
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_1.png", alt="")
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_2.png", alt="")
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_3.png", alt="")
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_4.png", alt="")
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_5.png", alt="")
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_6.png", alt="")
+					.item.item-clients
+						figure
+							a(href="#")
+								img(src="./img/clients_3.png", alt="")

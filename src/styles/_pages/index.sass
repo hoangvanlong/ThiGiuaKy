@@ -1,0 +1,77 @@
+.home-news
+	.row
+		margin: 63px 0 41px 0
+		h1 
+			font-size: 1.875rem
+			text-transform: uppercase
+			text-align: center
+			position: relative
+			&:before,
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				background: #11c8cd
+				left: 50%
+				transform: translateX(-50%)
+			&:before
+				top: calc(100% + 13px) 
+				width: 70px
+				height: 3px
+			&:after
+				background-color: #fff
+				border: 3px solid #11c8cd
+				border-radius: 50%
+				height: 17px
+				width: 17px
+				top: calc(100% + 6px)
+		.item
+			a 
+				text-decoration: none
+				figure
+					.box-img
+						position: relative
+						overflow: hidden
+						img 
+							width: 100%
+							transition: .3s all ease-in-out
+							filter: grayscale(100%)
+						&:after
+							position: absolute
+							display: block
+							content: ''
+							width: 100%
+							height: 100%
+							top: 0
+					figcaption
+						h2 
+							font-size: 1rem
+							line-height: 1.3rem
+							color: #000
+							margin-top: 1rem
+							margin-bottom: 0
+						time,
+						p 
+							color: darken(#fff,30%)
+							font-size: 0.875rem
+						time
+							line-height: .9rem
+						p 
+							line-height: 1.2rem
+							margin-top: .75rem
+							height: 3.5rem
+							overflow: hidden
+			&:hover,
+			&:active
+				figure 
+					.box-img
+						&:after
+							top: 0
+							box-shadow: 0 0 0 3px #11c8cd inset
+						img 
+							filter: none
+					figcaption
+						h2
+							color: #11c8cd
+						p 
+							color: #000
